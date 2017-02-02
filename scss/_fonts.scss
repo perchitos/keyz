@@ -1,0 +1,47 @@
+@include font-face(
+    "lato-regular",
+    font-files(
+        "lato-regular.woff", woff,
+        "lato-regular.ttf", ttf,
+        "lato-regular.svg", svg
+    ),
+    "lato-regular.eot",
+    normal,
+    normal
+);
+
+@include font-face(
+    "lato-bold",
+    font-files(
+        "lato-bold.woff", woff,
+        "lato-bold.ttf", ttf,
+        "lato-bold.svg", svg
+    ),
+    "lato-bold.eot",
+    normal,
+    normal
+);
+
+@include font-face(
+    "lato-light",
+    font-files(
+        "lato-light.woff", woff,
+        "lato-light.ttf", ttf,
+        "lato-light.svg", svg
+    ),
+    "lato-light.eot",
+    normal,
+    normal
+);
+
+@include font-face(
+    "lato-black",
+    font-files(
+        "lato-black.woff", woff,
+        "lato-black.ttf", ttf,
+        "lato-black.svg", svg
+    ),
+    "lato-black.eot",
+    normal,
+    normal
+);

@@ -1,0 +1,22 @@
+/*  Font Awesome
+_______________________________________________________________
+1. Including mandatory files
+2. Including base class
+3. Including icons
+===============================================================*/
+
+
+//  Including mandatory files
+@import "font-awesome-compass";
+@import "font-awesome/variables";
+@import "font-awesome/mixins";
+
+
+//  Including font path
+@import "font-awesome/path";
+
+//  Including base class
+@import "font-awesome/core";
+
+//  Including icons
+@import "font-awesome/icons";

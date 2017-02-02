@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>               <html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>                  <html class="no-js ie lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                  <html class="no-js ie lt-ie9" lang="en"><![endif]-->
+<!--[if IE 9]>                  <html class="no-js ie lt-ie10" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=yes">
+
+    <title></title>
+
+    <!-- build:css css/vendor.min.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/superslides/dist/stylesheets/superslides.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css css/style.min.css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- endbuild -->
+
+    <!--[if IE]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+<div class="wrapper results">
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <form action="#" class="language">
+                    <select name="select-menu header" class="select-menu header js-select">
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                    </select>
+                </form>
+                <ul class="social">
+                    <li class="social-icon"><a href=""><i class="fa fa-facebook-square"></i></a></li>
+                    <li class="social-icon"><a href=""><i class="fa fa-youtube-play"></i></a></li>
+                    <li class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li class="social-icon"><a href=""><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="container">
+                <a href="" class="logo"><img src="images/logo.png" class=""></a>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="spain.html">LOCATIONS</a></li>
+                        <li class="menu-item"><a href="results.html">PROPERTIES</a></li>
+                        <li class="menu-item"><a href="catalogue.html">DEVELOPMENTS</a></li>
+                        <li class="menu-item"><a href="#">COMPANY</a></li>
+                        <li class="menu-item"><a href="#">SERVICES</a></li>
+                        <li class="menu-item"><a href="#">NEWS</a></li>
+                        <li class="menu-item"><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <ul class="navigation">
+                    <li><a href="index.html">HOME</a><span>&gt;</span></li>
+                    <li><a href="#">LANDING 1</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="middle">
+        <div class="middle-inner">
+            <main class="content">
+                <div class="search">
+                    <div class="container">
+                        <p class="search-label">SEARCH</p>
+                        <form class="form-search" id="search-form">
+                            <div class="form-row">
+                                <div class="form-item input">
+                                    <input  name="form-item-terms" type="text" placeholder="Search terms, reference numb..." class="">
+                                </div>
+                                <div class="form-item input">
+                                    <select name="form-item-budget" class="form-item budget js-select">
+                                        <option value="null" selected disabled style='display:none;'>Maximum budget</option>
+                                        <option value="">Budget 1</option>
+                                        <option value="">Budget 2</option>
+                                        <option value="">Budget 3</option>
+                                        <option value="">Budget 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-item input">
+                                    <select name="form-item-location" class="form-item location js-select">
+                                        <option value="null" selected disabled style='display:none;'>Choose a location</option>
+                                        <option value="">Location 1</option>
+                                        <option value="">Location 2</option>
+                                        <option value="">Location 3</option>
+                                        <option value="">Location 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-item button-search">
+                                    <button form="search-form" type="submit" class="search-form-button">SEARCH</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="search-advanced">
+                            <button class="search-advanced-toggle j-toggle-form">ADVANCED SEARCH</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-extended">
+                    <div class="container">
+                        <p class="search-label">SEARCH</p>
+                        <form class="form" id="search-extended-form">
+                            <div class="form-left">
+                                <div class="form-left-map j-bg-image">
+                                    <img src="images/search-map.png">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-item input wide">
+                                        <select name="form-item-location" class="form-item js-select">
+                                            <option value="null" selected disabled style='display:none;'>Location</option>
+                                            <option value="">Location 1</option>
+                                            <option value="">Location 2</option>
+                                            <option value="">Location 3</option>
+                                            <option value="">Location 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-right">
+                                <div class="form-row">
+                                    <div class="form-item input wide-less">
+                                        <input  name="form-item-terms" type="text" placeholder="Search terms, reference numb..." class="">
+                                    </div>
+                                    <div class="form-item input medium">
+                                        <input  name="form-item-terms" type="text" placeholder="Reference number" class="">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-item input wide-lesser">
+                                        <select name="form-item-location" class="form-item js-select">
+                                            <option value="null" selected disabled style='display:none;'>Property type</option>
+                                            <option value="">Property type 1</option>
+                                            <option value="">Property type 2</option>
+                                            <option value="">Property type 3</option>
+                                            <option value="">Property type 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-item input narrow">
+                                        <select name="form-item-location" class="form-item js-select">
+                                            <option value="null" selected disabled style='display:none;'>Rooms</option>
+                                            <option value="">Rooms 1</option>
+                                            <option value="">Rooms 2</option>
+                                            <option value="">Rooms 3</option>
+                                            <option value="">Rooms 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-item input narrow">
+                                        <select name="form-item-location" class="form-item js-select">
+                                            <option value="null" selected disabled style='display:none;'>W.C.</option>
+                                            <option value="">W.C. 1</option>
+                                            <option value="">W.C. 2</option>
+                                            <option value="">W.C. 3</option>
+                                            <option value="">W.C. 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-item input medium-less">
+                                        <select name="form-item-location" class="form-item js-select">
+                                            <option value="null" selected disabled style='display:none;'>Min. price</option>
+                                            <option value="">Min. price 1</option>
+                                            <option value="">Min. price 2</option>
+                                            <option value="">Min. price 3</option>
+                                            <option value="">Min. price 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-item input medium-less">
+                                        <select name="form-item-location" class="form-item js-select">
+                                            <option value="null" selected disabled style='display:none;'>Max. price</option>
+                                            <option value="">Max. price 1</option>
+                                            <option value="">Max. price 2</option>
+                                            <option value="">Max. price 3</option>
+                                            <option value="">Max. price 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-item input checkbox left">
+                                        <p class="label">Features</p>
+                                        <div class="checkbox-group">
+                                            <input id="features[0]" name="form-item-features" type="checkbox" class="form-checkbox features">
+                                            <label for="features[0]"  class="checkbox-group-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                                    <path fill="#5b6670" d="M15.15 4.6L13.9 3.7l-2.44-1.84-.53-.4-.68-.5L9 0 7.74.93l-.68.52-.53.4L4.1 3.67l-1.25.93L0 6.76V18h2.04V7.78l2.04-1.53.82-.62.92-.7L7.76 3.5 9 2.56l1.23.92 1.95 1.46.92.7.8.6h.02l2.04 1.54V18H18V6.76L15.15 4.6"/>
+                                                    <path fill="#5b6670" d="M4.1 15.96V18h2.04v-2.04h5.72V18h2.05v-2.04l.42-3.28H3.68l.4 3.28M5.73 8.18l-.82 2.86h8.2l-.83-2.86H5.73"/>
+                                                </svg>
+                                            </label>
+                                            <input id="features[1]" name="form-item-features" type="checkbox" class="form-checkbox features">
+                                            <label for="features[1]" class="checkbox-group-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.64 18">
+                                                    <path fill="#5b6670" d="M14.95 15.13l-.12.12V1.05a1.06 1.06 0 1 0-2.12 0v1.07H5.94V1.06a1.06 1.06 0 0 0-2.12 0v14.17l-.1-.1a3.77 3.77 0 0 0-2.86-1.37 3.67 3.67 0 0 0-.85.1v2.3a1.25 1.25 0 0 1 .84-.28 1.73 1.73 0 0 1 1.37.75 3.7 3.7 0 0 0 5.78 0 1.67 1.67 0 0 1 1.33-.73 1.73 1.73 0 0 1 1.38.75 3.7 3.7 0 0 0 5.77 0 1.67 1.67 0 0 1 1.33-.73 1.28 1.28 0 0 1 .85.27v-2.3a3.67 3.67 0 0 0-3.68 1.23zm-9-10.9h6.78v2.13H5.95V4.24zm0 4.25h6.78v2.12H5.95V8.48zm3.4 5.3a3.7 3.7 0 0 0-2.85 1.35 4.55 4.55 0 0 1-.55.5V12.7h6.78v2.9a5.14 5.14 0 0 1-.52-.47 3.77 3.77 0 0 0-2.88-1.37z"/>
+                                                </svg>
+                                            </label>
+                                            <label class="checkbox-group-item">
+                                                <input name="form-item-features" type="checkbox" class="form-checkbox features">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.51 18">
+                                                    <path fill="#5a656f" d="M7.77 5.3a2.46 2.46 0 1 0 2.27 1.52A2.45 2.45 0 0 0 7.77 5.3z"/>
+                                                    <path fill="#5a656f" d="M14.16 7.75a2.46 2.46 0 0 0-1.87-4.53 2.46 2.46 0 0 0-4.54-1.87 2.46 2.46 0 0 0-4.53 1.87 2.46 2.46 0 0 0-1.87 4.53 2.46 2.46 0 0 0 1.87 4.53 2.46 2.46 0 0 0 3.3 3v2.68H9v-2.68a2.46 2.46 0 0 0 3.3-3 2.46 2.46 0 0 0 1.86-4.53zm-2.24 1.72a4.5 4.5 0 1 1 0-3.45 4.48 4.48 0 0 1 0 3.46z"/>
+                                                </svg>
+                                            </label>
+                                            <label class="checkbox-group-item">
+                                                <input name="form-item-features" type="checkbox" class="form-checkbox features">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18.14">
+                                                    <path fill="#5b6670" d="M0 13.1h18v2.04H0zM16.77 10h-.6a7.37 7.37 0 0 0-6.15-5.65v-1.3h1.84v-2H6.13v2h1.8v1.3A7.37 7.37 0 0 0 1.8 9h-.6v2h15.56V9z"/>
+                                                </svg>
+                                            </label>
+                                            <label class="checkbox-group-item">
+                                                <input name="form-item-features" type="checkbox" class="form-checkbox features">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                                    <path fill="#5b6670" d="M15.15 4.6L13.9 3.7l-2.44-1.84-.53-.4-.68-.5L9 0 7.74.93l-.68.52-.53.4L4.1 3.67l-1.25.93L0 6.76V18h2.04V7.78l2.04-1.53.82-.62.92-.7L7.76 3.5 9 2.56l1.23.92 1.95 1.46.92.7.8.6h.02l2.04 1.54V18H18V6.76L15.15 4.6"/>
+                                                    <path fill="#5b6670" d="M4.1 15.96V18h2.04v-2.04h5.72V18h2.05v-2.04l.42-3.28H3.68l.4 3.28M5.73 8.18l-.82 2.86h8.2l-.83-2.86H5.73"/>
+                                                </svg>
+                                            </label>
+                                            <label class="checkbox-group-item">
+                                                <input name="form-item-features" type="checkbox" class="form-checkbox features">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.64 18">
+                                                    <path fill="#5b6670" d="M14.95 15.13l-.12.12V1.05a1.06 1.06 0 1 0-2.12 0v1.07H5.94V1.06a1.06 1.06 0 0 0-2.12 0v14.17l-.1-.1a3.77 3.77 0 0 0-2.86-1.37 3.67 3.67 0 0 0-.85.1v2.3a1.25 1.25 0 0 1 .84-.28 1.73 1.73 0 0 1 1.37.75 3.7 3.7 0 0 0 5.78 0 1.67 1.67 0 0 1 1.33-.73 1.73 1.73 0 0 1 1.38.75 3.7 3.7 0 0 0 5.77 0 1.67 1.67 0 0 1 1.33-.73 1.28 1.28 0 0 1 .85.27v-2.3a3.67 3.67 0 0 0-3.68 1.23zm-9-10.9h6.78v2.13H5.95V4.24zm0 4.25h6.78v2.12H5.95V8.48zm3.4 5.3a3.7 3.7 0 0 0-2.85 1.35 4.55 4.55 0 0 1-.55.5V12.7h6.78v2.9a5.14 5.14 0 0 1-.52-.47 3.77 3.77 0 0 0-2.88-1.37z"/>
+                                                </svg>
+                                            </label>
+                                            <label class="checkbox-group-item">
+                                                <input name="form-item-features" type="checkbox" class="form-checkbox features">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.51 18">
+                                                    <path fill="#5a656f" d="M7.77 5.3a2.46 2.46 0 1 0 2.27 1.52A2.45 2.45 0 0 0 7.77 5.3z"/>
+                                                    <path fill="#5a656f" d="M14.16 7.75a2.46 2.46 0 0 0-1.87-4.53 2.46 2.46 0 0 0-4.54-1.87 2.46 2.46 0 0 0-4.53 1.87 2.46 2.46 0 0 0-1.87 4.53 2.46 2.46 0 0 0 1.87 4.53 2.46 2.46 0 0 0 3.3 3v2.68H9v-2.68a2.46 2.46 0 0 0 3.3-3 2.46 2.46 0 0 0 1.86-4.53zm-2.24 1.72a4.5 4.5 0 1 1 0-3.45 4.48 4.48 0 0 1 0 3.46z"/>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-item input checkbox right">
+                                        <p class="label">Tipology</p>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-group-item">
+                                                <input name="form-item-features" type="checkbox" class="form-checkbox features">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                                    <path fill="#5b6670" d="M15.15 4.6L13.9 3.7l-2.44-1.84-.53-.4-.68-.5L9 0 7.74.93l-.68.52-.53.4L4.1 3.67l-1.25.93L0 6.76V18h2.04V7.78l2.04-1.53.82-.62.92-.7L7.76 3.5 9 2.56l1.23.92 1.95 1.46.92.7.8.6h.02l2.04 1.54V18H18V6.76L15.15 4.6"/>
+                                                    <path fill="#5b6670" d="M4.1 15.96V18h2.04v-2.04h5.72V18h2.05v-2.04l.42-3.28H3.68l.4 3.28M5.73 8.18l-.82 2.86h8.2l-.83-2.86H5.73"/>
+                                                </svg>
+                                            </label>
+                                            <label class="checkbox-group-item">
+                                                <input name="form-item-features" type="checkbox" class="form-checkbox features">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.64 18">
+                                                    <path fill="#5b6670" d="M14.95 15.13l-.12.12V1.05a1.06 1.06 0 1 0-2.12 0v1.07H5.94V1.06a1.06 1.06 0 0 0-2.12 0v14.17l-.1-.1a3.77 3.77 0 0 0-2.86-1.37 3.67 3.67 0 0 0-.85.1v2.3a1.25 1.25 0 0 1 .84-.28 1.73 1.73 0 0 1 1.37.75 3.7 3.7 0 0 0 5.78 0 1.67 1.67 0 0 1 1.33-.73 1.73 1.73 0 0 1 1.38.75 3.7 3.7 0 0 0 5.77 0 1.67 1.67 0 0 1 1.33-.73 1.28 1.28 0 0 1 .85.27v-2.3a3.67 3.67 0 0 0-3.68 1.23zm-9-10.9h6.78v2.13H5.95V4.24zm0 4.25h6.78v2.12H5.95V8.48zm3.4 5.3a3.7 3.7 0 0 0-2.85 1.35 4.55 4.55 0 0 1-.55.5V12.7h6.78v2.9a5.14 5.14 0 0 1-.52-.47 3.77 3.77 0 0 0-2.88-1.37z"/>
+                                                </svg>
+                                            </label>
+                                            <label class="checkbox-group-item">
+                                                <input name="form-item-features" type="checkbox" class="form-checkbox features">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.51 18">
+                                                    <path fill="#5a656f" d="M7.77 5.3a2.46 2.46 0 1 0 2.27 1.52A2.45 2.45 0 0 0 7.77 5.3z"/>
+                                                    <path fill="#5a656f" d="M14.16 7.75a2.46 2.46 0 0 0-1.87-4.53 2.46 2.46 0 0 0-4.54-1.87 2.46 2.46 0 0 0-4.53 1.87 2.46 2.46 0 0 0-1.87 4.53 2.46 2.46 0 0 0 1.87 4.53 2.46 2.46 0 0 0 3.3 3v2.68H9v-2.68a2.46 2.46 0 0 0 3.3-3 2.46 2.46 0 0 0 1.86-4.53zm-2.24 1.72a4.5 4.5 0 1 1 0-3.45 4.48 4.48 0 0 1 0 3.46z"/>
+                                                </svg>
+                                            </label>
+                                            <label class="checkbox-group-item">
+                                                <input name="form-item-features" type="checkbox" class="form-checkbox features">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18.14">
+                                                    <path fill="#5b6670" d="M0 13.1h18v2.04H0zM16.77 10h-.6a7.37 7.37 0 0 0-6.15-5.65v-1.3h1.84v-2H6.13v2h1.8v1.3A7.37 7.37 0 0 0 1.8 9h-.6v2h15.56V9z"/>
+                                                </svg>
+                                            </label>
+                                            <label class="checkbox-group-item">
+                                                <input name="form-item-features" type="checkbox" class="form-checkbox features">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                                    <path fill="#5b6670" d="M15.15 4.6L13.9 3.7l-2.44-1.84-.53-.4-.68-.5L9 0 7.74.93l-.68.52-.53.4L4.1 3.67l-1.25.93L0 6.76V18h2.04V7.78l2.04-1.53.82-.62.92-.7L7.76 3.5 9 2.56l1.23.92 1.95 1.46.92.7.8.6h.02l2.04 1.54V18H18V6.76L15.15 4.6"/>
+                                                    <path fill="#5b6670" d="M4.1 15.96V18h2.04v-2.04h5.72V18h2.05v-2.04l.42-3.28H3.68l.4 3.28M5.73 8.18l-.82 2.86h8.2l-.83-2.86H5.73"/>
+                                                </svg>
+                                            </label>
+                                            <label class="checkbox-group-item">
+                                                <input name="form-item-features" type="checkbox" class="form-checkbox features">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.64 18">
+                                                    <path fill="#5b6670" d="M14.95 15.13l-.12.12V1.05a1.06 1.06 0 1 0-2.12 0v1.07H5.94V1.06a1.06 1.06 0 0 0-2.12 0v14.17l-.1-.1a3.77 3.77 0 0 0-2.86-1.37 3.67 3.67 0 0 0-.85.1v2.3a1.25 1.25 0 0 1 .84-.28 1.73 1.73 0 0 1 1.37.75 3.7 3.7 0 0 0 5.78 0 1.67 1.67 0 0 1 1.33-.73 1.73 1.73 0 0 1 1.38.75 3.7 3.7 0 0 0 5.77 0 1.67 1.67 0 0 1 1.33-.73 1.28 1.28 0 0 1 .85.27v-2.3a3.67 3.67 0 0 0-3.68 1.23zm-9-10.9h6.78v2.13H5.95V4.24zm0 4.25h6.78v2.12H5.95V8.48zm3.4 5.3a3.7 3.7 0 0 0-2.85 1.35 4.55 4.55 0 0 1-.55.5V12.7h6.78v2.9a5.14 5.14 0 0 1-.52-.47 3.77 3.77 0 0 0-2.88-1.37z"/>
+                                                </svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-item button-search">
+                                    <button form="search-extended-form" type="submit" class="search-form-button">SEARCH</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="search-advanced">
+                            <button class="search-advanced-toggle j-toggle-form">CLOSE ADVANCE SEARCH</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-properties container">
+
+                    <p class="content-properties-label">se han listado un total de <span>xx propiedades</span></p>
+                    <div class="content-properties-select">
+                        <div class="form-row">
+                            <div class="form-item input sorting">
+                                <select name="form-item-sorting" class="form-item location js-select">
+                                    <option value="">Choose a location</option>
+                                    <option value="">Choose a location</option>
+                                    <option value="">Choose a location</option>
+                                    <option value="">Choose a location</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-properties-row">
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-1.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>VILLA LIPSUM</span></h4>
+                                    <p>(BLUDELLOTS DE LA PRUA)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-2.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>EDIFICI LOREM</span></h4>
+                                    <p>(BARCELONA CENTRE)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-3.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>LLADÓ</span></h4>
+                                    <p>(SITGES)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-4.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>EDIFICI FÓRUM</span></h4>
+                                    <p>(BARCELONA FÓRUM)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-properties-row">
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-1.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>VILLA LIPSUM</span></h4>
+                                    <p>(BLUDELLOTS DE LA PRUA)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-2.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>EDIFICI LOREM</span></h4>
+                                    <p>(BARCELONA CENTRE)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-3.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>LLADÓ</span></h4>
+                                    <p>(SITGES)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-4.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>EDIFICI FÓRUM</span></h4>
+                                    <p>(BARCELONA FÓRUM)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-properties-row">
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-1.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>VILLA LIPSUM</span></h4>
+                                    <p>(BLUDELLOTS DE LA PRUA)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-2.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>EDIFICI LOREM</span></h4>
+                                    <p>(BARCELONA CENTRE)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-3.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>LLADÓ</span></h4>
+                                    <p>(SITGES)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-4.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>EDIFICI FÓRUM</span></h4>
+                                    <p>(BARCELONA FÓRUM)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-properties-row">
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-1.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>VILLA LIPSUM</span></h4>
+                                    <p>(BLUDELLOTS DE LA PRUA)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-2.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>EDIFICI LOREM</span></h4>
+                                    <p>(BARCELONA CENTRE)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-3.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>LLADÓ</span></h4>
+                                    <p>(SITGES)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="property">
+                            <div class="property-top j-bg-image">
+                                <img src="images/property-4.png" alt="">
+                                <div class="property-top-text">
+                                    <h4><span>EDIFICI FÓRUM</span></h4>
+                                    <p>(BARCELONA FÓRUM)</p>
+                                </div>
+                            </div>
+                            <div class="property-bottom">
+                                <div class="parameters">
+                                    <div class="parameters-item price">
+                                        <p>2.545.300&#8364;
+                                    </div>
+                                    <div class="parameters-item area">
+                                        <p>1200 m<sup>2</sup></p>
+                                    </div>
+                                </div>
+                                <p class="description">Lorem ipsum it dolor sit amet ut quean laxis resonare fibris miragestuorum famoli  tuorum solve poluti vi rea</p>
+                                <a href="" class="button">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pages">
+                        <ul class="pages-list">
+                            <li class="pages-list-item fa fa-angle-left"><a></a></li>
+                            <li class="pages-list-item"><a>1</a></li>
+                            <li class="pages-list-item"><a>2</a></li>
+                            <li class="pages-list-item active"><a>3</a></li>
+                            <li class="pages-list-item"><a>4</a></li>
+                            <li class="pages-list-item others"><a>...</a></li>
+                            <li class="pages-list-item"><a>20</a></li>
+                            <li class="pages-list-item fa fa-angle-right"><a></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-top-middle">
+                <div class="footer-top-container">
+                    <div class="footer-top-menu">
+                        <div class="footer-top-menu-inner">
+                            <ul class="menu">
+                                <li class="menu-item"><a href="#">LOCATIONS</a></li>
+                                <li class="menu-item"><a href="#">PROPERTIES</a></li>
+                                <li class="menu-item"><a href="#">DEVELOPMENTS</a></li>
+                                <li class="menu-item"><a href="#">COMPANY</a></li>
+                                <li class="menu-item"><a href="#">SERVICES</a></li>
+                                <li class="menu-item"><a href="#">NEWS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-top-logo">
+                    <a href="" class="logo"><img src="images/logo.png" class=""></a>
+                </div>
+
+                <div class="footer-top-button">
+                    <button type="button" class="footer-chat">CHAT NOW
+                        <svg class="footer-chat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 37.43">
+                            <g ><circle cx="16" cy="16" r="16" fill="#fff"/>
+                                <path fill="#5b6670" d="M24 11.84v12h-5.38v-5.4a.67.67 0 0 0-.67-.67h-4a.67.67 0 0 0-.67.67v5.38H7.9v-12L16 5.96z"/>
+                                <path fill="#fff" d="M14.5 37.43l1.07-8.94 8.94 1.07-10 7.86"/></g>
+                        </svg>
+                    </button>
+                    <!--<div class="footer-chat-hint">-->
+                    <!--<h4>CHAT WITH US</h4>-->
+                    <!--<p>Lorem ipsum it dolor sit amet ut laxis resonare fibris mirages.</p>-->
+                    <!--<a class="hint-close"></a>-->
+                    <!--</div>-->
+                    <p>Lorem ipsum 08:00 - 21:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <ul class="social">
+                <li class="social-icon"><a href=""><i class="fa fa-facebook-square"></i></a></li>
+                <li class="social-icon"><a href=""><i class="fa fa-youtube-play"></i></a></li>
+                <li class="social-icon"><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li class="social-icon"><a href=""><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <ul class="contacts">
+                <li class="contacts-item">KEYZ international realtors &copy; 2016</li>
+                <li class="contacts-item"><a href="">Legal notice</a></li>
+                <li class="contacts-item"><a href="">Web map</a></li>
+                <li class="contacts-item"><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!-- build:js js/vendor.min.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.js"></script>
+<script src="bower_components/superslides/dist/jquery.superslides.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js js/script.min.js -->
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

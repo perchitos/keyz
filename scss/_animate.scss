@@ -1,0 +1,11 @@
+@import "../../../../Keyz/IDE/app/bower_components/animatewithsass/_properties";
+@import "../../../../Keyz/IDE/app/bower_components/animatewithsass/_fading-entrances/_fadeIn";
+@import "../../../../Keyz/IDE/app/bower_components/animatewithsass/_fading-exits/_fadeOut";
+
+.fadeIn {
+  @include fadeIn();
+}
+
+.fadeOut {
+  @include fadeIn();
+}

@@ -1,0 +1,56 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+$grid-gutter-width: 20px;
+
+
+//== Media queries breakpoints
+// Extra small screen / phone
+$screen-xs:                  480px;
+$screen-xs-min:              $screen-xs;
+$screen-phone:               $screen-xs-min;
+
+// Small screen / tablet
+$screen-sm:                  750px;
+$screen-sm-min:              $screen-sm;
+$screen-tablet:              $screen-sm-min;
+
+// Medium screen / desktop
+$screen-md:                  920px;
+$screen-md-min:              $screen-md;
+$screen-desktop:             $screen-md-min;
+
+// Large screen / wide desktop
+$screen-lg:                  (935px + $grid-gutter-width);
+$screen-lg-min:              $screen-lg ;
+$screen-lg-desktop:          $screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
+
+
+
+//== Grid system
+$grid-float-breakpoint:     $screen-sm-min;
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
+
+
+//== Container sizes
+$container-tablet:             (100%);
+$container-sm:                 $container-tablet;
+$container-desktop:            $container-sm;
+$container-md:                 $container-desktop;
+$container-large-desktop:      (935px + $grid-gutter-width);
+$container-lg:                 $container-large-desktop;
+
+// Core variables and mixins
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Core CSS
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+
+
+// Utility classes
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";

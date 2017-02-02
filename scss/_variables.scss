@@ -1,0 +1,151 @@
+$black: #000;
+$white: #fff;
+$gray: #5F666F;
+$search-gray: #5B6670;
+$border-gray: #B2B7BE;
+$button-gray: #aeb3b7;
+$light-gray: #EEEFF0;
+
+$bla-gray: #464952;
+$dark-gray: #202932;
+
+$imageUrl: '../images';
+$fontUrl: '../fonts';
+
+$LatoRegular: "lato-regular", Arial, Helvetica, sans-serif;
+$LatoBlack: "lato-black", Arial, Helvetica, sans-serif;
+$LatoLight: "lato-light", Arial, Helvetica, sans-serif;
+$LatoBold: "lato-bold", Arial, Helvetica, sans-serif;
+//$breakpoints: ('1250': 1250px, '992': 992px, '768': 768px, '580': 580px);
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }@else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+@mixin get-sprite( $sprite, $center-align: false, $responsive: false ) {
+  //$sprite-url: sprite-url($map);
+  //$sprite-image: sprite-file($map, $sprite);
+
+  $map: null;
+  $sprite-name: null;
+
+  //@if ( $responsive == false ){
+    $map:sprite-map("ico-sprites/*.png");
+    $sprite-name: "ico-sprites.png";
+  //}@else{
+  //  $map:sprite-map("ico-sprites-responsive/*.png");
+  //  $sprite-name: "ico-sprites-responsive.png";
+  //}
+
+  $sprite-position: sprite-position($map, $sprite);
+  $sprite-height: image-height(sprite-file($map, $sprite));
+  $sprite-width: image-width(sprite-file($map, $sprite));
+
+  background-image: image_url('#{$sprite-name}');
+  background-position: $sprite-position;
+  height: $sprite-height;
+  width: $sprite-width;
+
+  @if ( $center-align == horizontal ){
+    left: 50%;
+    margin-left: -#{$sprite-width / 2};
+  }@else if( $center-align == vertical ){
+    top: 50%;
+    margin-top: -#{$sprite-height / 2};
+  }
+  @else if( $center-align == both ){
+    top: 50%;
+    left: 50%;
+    margin-top: -#{$sprite-height / 2};
+    margin-left: -#{$sprite-width / 2};
+  }
+
+  background-repeat: no-repeat;
+
+  @if sprite_has_selector($map, $sprite,hover){
+    $sprite_hover: $sprite + _hover;
+    &:hover{
+      background-position: sprite-position($map, $sprite_hover);
+    }
+  }
+}
+
+
+@mixin arrow($way, $top-position, $right-position, $bottom-position, $left-position, $width, $height, $color, $center:false){
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  right: $right-position;
+  bottom: $bottom-position;
+  left: $left-position;
+  top: $top-position;
+  width: 0;
+  height: 0;
+  z-index: 10;
+  @if( $way == 'left' ){
+    @if( $center == true ){
+      margin-top: -#{$width / 2};
+      top: 50%;
+    }
+    left: -#{$height};
+    border-right: #{$height} solid $color;
+    border-top: #{$width / 2} solid transparent;
+    border-bottom: #{$width / 2} solid transparent;
+  }
+  @if( $way == 'right' ){
+    @if( $center == true ){
+      margin-top: -#{$width / 2};
+      top: 50%;
+    }
+    right: -#{$height};
+    border-left: #{$height} solid $color;
+    border-top: #{$width / 2} solid transparent;
+    border-bottom: #{$width / 2} solid transparent;
+  }
+  @if( $way == 'top' ){
+    @if( $center == true ){
+      margin-left: -#{$width / 2};
+      left: 50%;
+    }
+    top: -#{$height};
+    border-bottom: #{$height} solid $color;
+    border-left: #{$width / 2} solid transparent;
+    border-right: #{$width / 2} solid transparent;
+  }
+  @if( $way == 'bottom' ){
+    @if( $center == true ){
+      margin-left: -#{$width / 2};
+      left: 50%;
+    }
+    bottom: -#{$height};
+    border-top: #{$height} solid $color;
+    border-left: #{$width / 2} solid transparent;
+    border-right: #{$width / 2} solid transparent;
+  }
+}
+
+@mixin overlay() {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+@mixin padding($padding: 100%){
+  content: '';
+  display: block;
+  padding-top: $padding;
+  position: relative;
+}

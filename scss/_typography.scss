@@ -1,0 +1,471 @@
+html {
+  color: $gray;
+  min-height: 100%;
+  text-align: center;
+  letter-spacing: -0.005em;
+  font: 300 15px $LatoLight;
+}
+
+body {
+  line-height: 1.25;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: table;
+  table-layout: fixed;
+
+  li {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    list-style-type: none;
+    height: 100%;
+  }
+}
+
+p {
+  margin: 0 0 1.2em;
+
+  &.main-bottom-description {
+    font-size: 17px;
+    letter-spacing: 0;
+    margin-bottom: 23px;
+  }
+}
+
+a {
+  z-index: 200;
+  color: $white;
+  cursor: pointer;
+  text-decoration: none;
+  @include transition(all 0.2s);
+
+  &:hover{
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $white;
+  }
+
+  .contacts-item &, .footer & {
+    color: $gray;
+  }
+
+  &.location-button {
+    float: left;
+    color: $gray;
+    visibility: hidden;
+    padding: 5px 8px 5px 0;
+    text-transform: uppercase;
+    font: 900 14px $LatoBlack;
+    @include opacity(0);
+  }
+}
+
+h1 {
+  margin: 6px 0;
+  text-align: left;
+  position: relative;
+  padding-bottom: 14px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  font: 900 31px/1.1 $LatoBlack;
+
+  &:after {
+    bottom: 0;
+    content: '';
+    height: 6px;
+    max-width: 225px;
+    background: $gray;
+    @include stretch-x();
+  }
+
+  .main & {
+    font-size: 48px;
+    line-height: 0.94;
+    letter-spacing: -2px;
+    //font: 900 29px ;
+  }
+}
+
+h2 {
+  margin: 0 0 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font: 900 27px $LatoBlack;
+
+  .content-article & {
+    margin-bottom: 7px;
+
+    .main & {
+      margin-bottom: 9px;
+    }
+  }
+
+  .content-properties & {
+    margin-bottom: 23px;
+
+    .location & {
+      margin-bottom: 0;
+    }
+  }
+}
+
+h3 {
+  margin: 0;
+  padding: 20px 0 50px;
+  letter-spacing: 0.01em;
+  font: 900 26px $LatoBlack;
+  text-transform: uppercase;
+
+  .main-bottom & {
+    letter-spacing: 0.06em;
+    padding-bottom: 9px !important;
+  }
+
+  .main & {
+    padding-bottom: 22px;
+  }
+}
+
+h4 {
+  color: $white;
+  margin-bottom: 6px;
+  line-height: 1.2em;
+  font: 900 17px $LatoBlack;
+  text-transform: uppercase;
+
+  .content-gray & {
+    margin: 0;
+    padding: 0 76px;
+  }
+
+  .main-bottom & {
+    display: table;
+    font-size: 22px;
+    position: relative;
+    margin: 0 auto 7px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    padding: 9px 0 !important;
+    border-bottom: 6px solid #fff;
+  }
+
+  .footer-chat-hint & {
+    color: $gray;
+    margin: 10px 0;
+  }
+
+  .photo-block & {
+    padding: 0 40px;
+  }
+
+  .location-photo-block & {
+    display: table;
+    font-size: 18px;
+    position: relative;
+    margin: 0 auto 7px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    padding: 9px 0 !important;
+    border-bottom: 6px solid #fff;
+  }
+
+  .homes & {
+    margin: 23px 41px;
+  }
+}
+
+h5 {
+  display: table;
+  margin: 0 0 13px;
+  position: relative;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  padding: 9px 0 !important;
+  font: 900 22px $LatoBlack;
+  border-bottom: 6px solid $gray;
+
+  .location-preferences & {
+    font-size: 18px;
+    margin-bottom: 11px;
+    padding: 0 0 7px !important;
+  }
+}
+
+// Select
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=date],
+input[type=number],
+input[type=week],
+input[type=url],
+input[type=tel],
+select,
+textarea {
+  width: 100%;
+  height: 40px;
+  color: $gray;
+  line-height: 1;
+  display: block;
+  outline: 0 none;
+  text-align: left;
+  position: relative;
+  padding: 11px 12px;
+  background-color: $white;
+  border: 1px solid $border-gray;
+  @include ellipsis();
+  @include box-sizing();
+  @include border-radius(2px);
+  @include appearance('none');
+  @include transition(all 0.1s);
+  @include input-placeholder(){
+    color: $gray;
+    @include opacity(1);
+    @include transition(all 0.2s);
+  }
+
+  &:hover {
+    border: 1px solid darken($border-gray, 15%);
+  }
+
+  &:focus {
+    outline: 0 none;
+    @include input-placeholder(){
+      @include opacity(0);
+    }
+    border: 1px solid darken($border-gray, 15%);
+  }
+
+  &[disabled],
+  &[disabled="disabled"]{
+    cursor: default !important;
+    @include opacity(.5);
+  }
+}
+
+textarea{
+  resize: none;
+  overflow: auto;
+  white-space: normal;
+}
+
+.checkbox-group {
+  margin: 2px 0px;
+  position: relative;
+  width: auto !important;
+  @include pie-clearfix;
+
+  input[type="checkbox"]{
+    display: none;
+
+    &:checked + label{
+      background: rgba($black, .5);
+    }
+  }
+
+  &-item {
+    float: left;
+    display: block;
+    cursor: pointer;
+    padding: 3px 4px;
+    margin-right: 8px;
+    position: relative;
+    background: $white;
+    border: 1px solid $border-gray;
+    @include border-radius(1px);
+
+    svg {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+
+.ui-selectmenu {
+  &-icon {
+    right: 0;
+    width: 40px;
+    z-index: 100;
+    position: absolute;
+    text-align: center;
+
+    &:after {
+      color: $gray;
+      font: normal 12px FontAwesome;
+      content: $fa-var-angle-down;
+    }
+
+    .language & {
+      top: 50%;
+      width: 14px;
+      margin-top: -8px;
+    }
+  }
+
+  &-button {
+    @extend input[type=text];
+    cursor: pointer;
+    padding-right: 41px;
+
+    &-open {
+      background-color: darken($white, 2%);
+    }
+
+    .header-top & {
+      border: none;
+      height: auto;
+      padding: 0 16px 0 0;
+      font: 900 11px $LatoBlack;
+      text-transform: uppercase;
+      background-color: rgba($white, 0);
+
+      &:hover {
+        color: darken($gray, 20%);
+      }
+    }
+  }
+
+  &-menu {
+    top: 0;
+    left: 0;
+    margin: 0;
+    color: $gray;
+    display: none;
+    position: absolute;
+    background-color: $white;
+    @include box-shadow(0 0 15px rgba($black, .3));
+
+    &.ui-selectmenu-open {
+      z-index: 300;
+      display: block;
+    }
+
+    >ul {
+      @include box-sizing();
+
+      >li {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.ui-menu-item {
+  display: block;
+  padding: 11px;
+
+  &:hover {
+    background: rgba($border-gray, 0.2);
+  }
+}
+
+input[type="button"],
+input[type="submit"],
+button {
+  outline: 0 none;
+  cursor: pointer;
+  @include appearance('button');
+
+  &:active{
+    outline: 0 none;
+    @include translateY(2px);
+  }
+  &:focus{
+    outline: 0 none;
+  }
+}
+
+button {
+  border: none;
+  color: $white;
+  padding: 10px 53px;
+  background: $button-gray;
+  text-transform: uppercase;
+  font: 900 13px $LatoBlack;
+  @include transition(all 0.2s);
+
+  &:hover {
+    background: rgba($button-gray, 0.6);
+  }
+
+  &.search-form-button {
+    width: 100%;
+    padding: 13px 9px;
+    background: #5b6670;
+    font: 400 13px "lato-regular", Arial, Helvetica, sans-serif;
+    @include border-radius(2px);
+
+    &:hover {
+      background: darken($search-gray, 10%);
+    }
+  }
+
+  .footer & {
+    font-size: 15px;
+    position: relative;
+    margin-bottom: 15px;
+    padding: 20px 78px 17px 22px;
+    background: rgba($search-gray, 1);
+    @include border-radius(2px);
+
+    &:hover {
+      background: darken($search-gray, 10%);
+    }
+  }
+
+  &.search-advanced-toggle {
+    padding: 0;
+    background: rgba($white, 0);
+  }
+}
+
+.button {
+  padding: 10px 53px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: 900 13px $LatoBlack;
+  background: rgba($button-gray, 1);
+
+  &:hover {
+    background: rgba($search-gray, 1);
+  }
+
+  .content-gray & {
+    padding: 8px 10px;
+    //margin: 20px 30px 0;
+    margin-top: 20px;
+
+    &:hover {
+      color: $search-gray;
+      background: $white;
+    }
+  }
+
+  &.allproperties {
+    font-size: 15px;
+    margin-top: 26px;
+    padding: 13px 27px;
+    display: inline-table;
+
+    .main & {
+      padding: 13px 109px;
+    }
+  }
+
+  .homes & {
+    padding: 10px 31px;
+  }
+}
+//
+//img {
+//  width: 100%;
+//}
